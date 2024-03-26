@@ -3,8 +3,10 @@
   margin: 0;
 }
 :root {
-    --primary-color: #2271ff;
-    --secondary-color: #000000;
-    --tertiary-color: #000000;
-} 
+  --primary-color: #2271ff;
+  --secondary-color: #e7edee;
+  --tertiary-color: #b9c0c2;
+}
 body {
+  background: var(--tertiary-color);
+}
