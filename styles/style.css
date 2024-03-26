@@ -7,19 +7,126 @@
   --secondary-color: #e7edee;
   --tertiary-color: #b9c0c2;
 }
+
 body {
-  background: var(--tertiary-color);
-  font-family: "Poppins", sans-serif;
-}
-.container {
+  margin: 0;
+  min-height: 100vh;
+  width: 100%;
   display: grid;
-  grid-template-columns: 300px 1fr;
-  grid-template-rows: 100px 1fr 1fr;
-  height: 100vh;
+  padding: auto;
+  font-family: "Roboto", "Helvetica Neue", "Segoe UI", "Arial", "sans-serif";
 }
-.ngeyo001 {
-  width: 50px; /* Set desired width */
-  height: 50px; /* Set desired height */
-  border-radius: 50%;
-  overflow: hidden;
+
+#profile-pic {
+  height: 70px;
+}
+#trend-icon {
+  height: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: minmax(240px, 1fr) 5fr;
+  background-color: aliceblue;
+}
+.sidebar {
+  background-color: var(--primary-color);
+  display: grid;
+  align-content: start;
+  gap: 50px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-right: 5px;
+}
+.sidebar > div {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: auto 100px;
+  justify-content: start;
+  align-items: center;
+}
+
+.sidebar p,
+.sidebar h1 {
+  color: whitesmoke;
+}
+
+.sideBar > a {
+  color: whitesmoke;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: whitesmoke;
+}
+
+.sidebar .logo {
+  filter: invert(98%) sepia(0%) saturate(7214%) hue-rotate(296deg)
+    brightness(121%) contrast(92%);
+}
+
+#header {
+  max-height: 150px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: white;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-bottom: 10px;
+}
+
+#search {
+  grid-column: 1/2;
+  display: grid;
+  background-color: white;
+  grid-auto-flow: column;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  align-items: center;
+}
+
+#search input {
+  appearance: none;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  height: 25px;
+  background-color: rgb(207, 207, 207);
+  padding: 2px 8px;
+  width: 90%;
+}
+
+#search .logo {
+  height: 23px;
+}
+
+#notifysec {
+  grid-column: 2/3;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 15px;
+  justify-content: end;
+  align-items: center;
+}
+
+#namesec {
+  align-items: center;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: auto 3fr;
+  gap: 15px;
+  font-weight: bolder;
+}
+
+#notifySec p,
+.projects-title,
+.announcements-title,
+.tren-titles {
+  font-size: 18px;
+  font-weight: 550;
 }
