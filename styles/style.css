@@ -11,3 +11,15 @@ body {
   background: var(--tertiary-color);
   font-family: "Poppins", sans-serif;
 }
+.container {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: 100px 1fr 1fr;
+  height: 100vh;
+}
+.ngeyo001 {
+  width: 50px; /* Set desired width */
+  height: 50px; /* Set desired height */
+  border-radius: 50%;
+  overflow: hidden;
+}
