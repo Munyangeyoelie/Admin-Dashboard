@@ -26,7 +26,7 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-columns: minmax(240px, 1fr) 5fr;
+  grid-template-columns: minmax(240px, 1fr) 5fr 1fr;
   background-color: aliceblue;
 }
 .sidebar {
@@ -129,4 +129,17 @@ a:visited {
 .tren-titles {
   font-size: 18px;
   font-weight: 550;
+}
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+.box {
+  display: grid;
+  grid-auto-flow: rows 1fr;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  align-items: center;
 }
