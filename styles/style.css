@@ -143,3 +143,13 @@ a:visited {
   gap: 10px;
   align-items: center;
 }
+.box4 , .box5, .box6 , .box7, .box8, .box1, .box2, .box3 {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  align-items: center;
+  padding: 10px:
+  margin: 10px;
+  border-radius: 10px;
+}
