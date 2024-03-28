@@ -41,3 +41,10 @@ body {
   height: 50px;
   border-radius: 50%;
 }
+.sidebar div {
+  display: block;
+}
+.dashboard div {
+  display: flex;
+  flex-direction: row;
+}
